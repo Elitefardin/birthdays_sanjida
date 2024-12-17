@@ -258,7 +258,7 @@ border-radius: 50px 120px 30px 130px;
     // Add animation to the No button
     noButton.style.position = 'absolute';  // Ensure it can be moved
     noButton.style.left = '180px';         // Initial position
-    noButton.style.animation = 'move-left-right .8s linear forwards';  // Single movement, stops at 50px
+    noButton.style.animation = 'move-left-right .20s linear forwards';  // Single movement, stops at 50px
     
     // Add animation to the Yes button
     yesButton.style.position = 'absolute';  // Ensure it can be moved
@@ -292,7 +292,7 @@ function showAlert() {
  alertBox.style.display = 'none';
   window.location.href = '#';
       
-}, 5000); 
+}, 50000); 
 
   }// 30000 milliseconds = 30 seconds
    
@@ -303,14 +303,14 @@ function showAlert() {
             // Randomize position, color, and delay
             confetti.innerHTML =" ";
             confetti.style.left = Math.random() * 100 + 'vw';
-              confetti.style.animationDelay = Math.random() * 20 + 's';
+              confetti.style.animationDelay = Math.random() * 30 + 's';
             
             document.body.appendChild(confetti);
 
             // Remove confetti after animation
             setTimeout(() => {
                 confetti.remove();
-            }, 6000);
+            }, 60000);
         }
 
         // Generate multiple confetti pieces on page load
@@ -321,7 +321,7 @@ function showAlert() {
             // Randomize position, color, and delay
             confetti.innerHTML ="♥️";
             confetti.style.top = Math.random() * 100 + 'vw';
-               confetti.style.animationDelay = Math.random() * 20 + 's';
+               confetti.style.animationDelay = Math.random() * 30 + 's';
             
             document.body.appendChild(confetti);
 
